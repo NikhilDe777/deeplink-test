@@ -1,16 +1,111 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Hatch Ignite Deep Link Tester</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        .link-box {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .link-box p {
+            margin: 0 0 8px 0;
+            color: #777;
+            font-size: 13px;
+        }
+        a {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+        .clever { background-color: #1565C0; }
+        .clever:hover { background-color: #0d47a1; }
+        .classlink { background-color: #E65100; }
+        .classlink:hover { background-color: #bf360c; }
+        .explore { background-color: #6A1B9A; }
+        .explore:hover { background-color: #4a148c; }
+    </style>
+</head>
 <body>
-  <h2>Deep Link Test</h2>
 
-  <a href="hatchignitedl://rms.hatchearlylearning.com/classlink/auth?code=TESTCODE123">
-    Test ClassLink Login
-  </a>
+    <h1>🚀 Hatch Ignite Deep Link Tester</h1>
 
-  <br><br>
+    <!-- ClassLink Links -->
+    <h2>📚 ClassLink</h2>
 
-  <a href="hatchignitedl://rms.hatchearlylearning.com/clever/authweb?code=TESTCODE456">
-    Test Clever Login
-  </a>
+    <div class="link-box">
+        <p>ClassLink → Normal Flow</p>
+        <a class="classlink" href="hatchignitedl://rms.hatchearlylearning.com/classlink/auth?code=TESTCODE123">
+            ClassLink Login (Normal)
+        </a>
+    </div>
+
+    <div class="link-box">
+        <p>ClassLink → Direct to ExploreIgnite Core Panel</p>
+        <a class="classlink" href="hatchignitedl://rms.hatchearlylearning.com/classlink/auth?code=TESTCODE123&directToExplore=true">
+            ClassLink Login (Direct to Core Panel) ✅
+        </a>
+    </div>
+
+    <!-- Clever Links -->
+    <h2>🎓 Clever</h2>
+
+    <div class="link-box">
+        <p>Clever → Normal Flow</p>
+        <a class="clever" href="hatchignitedl://rms.hatchearlylearning.com/clever/authweb?code=TESTCODE456">
+            Clever Login (Normal)
+        </a>
+    </div>
+
+    <div class="link-box">
+        <p>Clever → Direct to ExploreIgnite Core Panel</p>
+        <a class="clever" href="hatchignitedl://rms.hatchearlylearning.com/clever/authweb?code=TESTCODE456&directToExplore=true">
+            Clever Login (Direct to Core Panel) ✅
+        </a>
+    </div>
+
+    <!-- ExploreIgnite Direct Deep Links -->
+    <h2>🎮 ExploreIgnite Direct (No Login)</h2>
+
+    <div class="link-box">
+        <p>Opens ExploreIgnite directly with domain=1, subdomain=2, gameid=12</p>
+        <a class="explore" href="hatchignitedl://rmssg.hatchearlylearning.com/exploreignite?domain=1&subdomain=2&gameid=12&directToExplore=true">
+            Open ExploreIgnite (domain=1, subdomain=2, gameid=12) ✅
+        </a>
+    </div>
+
+    <div class="link-box">
+        <p>Opens ExploreIgnite directly with domain=2, subdomain=3, gameid=15</p>
+        <a class="explore" href="hatchignitedl://rmssg.hatchearlylearning.com/exploreignite?domain=2&subdomain=3&gameid=15&directToExplore=true">
+            Open ExploreIgnite (domain=2, subdomain=3, gameid=15) ✅
+        </a>
+    </div>
+
 </body>
 </html>
