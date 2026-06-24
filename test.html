@@ -10,15 +10,8 @@
             padding: 20px;
             background-color: #f5f5f5;
         }
-        h1 {
-            color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #555;
-            margin-top: 30px;
-        }
+        h1 { color: #333; border-bottom: 2px solid #333; padding-bottom: 10px; }
+        h2 { color: #555; margin-top: 30px; }
         .link-box {
             background: white;
             border-radius: 8px;
@@ -26,11 +19,8 @@
             margin: 10px 0;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .link-box p {
-            margin: 0 0 8px 0;
-            color: #777;
-            font-size: 13px;
-        }
+        .link-box p { margin: 0 0 8px 0; color: #777; font-size: 13px; }
+        .url-text { font-size: 11px; color: #999; word-break: break-all; margin: 4px 0 8px 0; }
         a {
             display: inline-block;
             background-color: #4CAF50;
@@ -41,9 +31,7 @@
             font-size: 15px;
             font-weight: bold;
         }
-        a:hover {
-            background-color: #45a049;
-        }
+        a:hover { background-color: #45a049; }
         .clever { background-color: #1565C0; }
         .clever:hover { background-color: #0d47a1; }
         .classlink { background-color: #E65100; }
@@ -56,56 +44,44 @@
 
     <h1>🚀 Hatch Ignite Deep Link Tester</h1>
 
-    <!-- ClassLink Links -->
+    <!-- ClassLink -->
     <h2>📚 ClassLink</h2>
-
     <div class="link-box">
         <p>ClassLink → Normal Flow</p>
+        <div class="url-text">hatchignitedl://rms.hatchearlylearning.com/classlink/auth?code=TESTCODE123</div>
         <a class="classlink" href="hatchignitedl://rms.hatchearlylearning.com/classlink/auth?code=TESTCODE123">
             ClassLink Login (Normal)
         </a>
     </div>
 
-    <div class="link-box">
-        <p>ClassLink → Direct to ExploreIgnite Core Panel</p>
-        <a class="classlink" href="hatchignitedl://rms.hatchearlylearning.com/classlink/auth?code=TESTCODE123&directToExplore=true">
-            ClassLink Login (Direct to Core Panel) ✅
-        </a>
-    </div>
-
-    <!-- Clever Links -->
+    <!-- Clever -->
     <h2>🎓 Clever</h2>
-
     <div class="link-box">
         <p>Clever → Normal Flow</p>
+        <div class="url-text">hatchignitedl://rms.hatchearlylearning.com/clever/authweb?code=TESTCODE456</div>
         <a class="clever" href="hatchignitedl://rms.hatchearlylearning.com/clever/authweb?code=TESTCODE456">
             Clever Login (Normal)
         </a>
     </div>
 
+    <!-- ExploreIgnite -->
+    <h2>🎮 ExploreIgnite Direct</h2>
+
     <div class="link-box">
-        <p>Clever → Direct to ExploreIgnite Core Panel</p>
-        <a class="clever" href="hatchignitedl://rms.hatchearlylearning.com/clever/authweb?code=TESTCODE456&directToExplore=true">
-            Clever Login (Direct to Core Panel) ✅
+        <p>ExploreIgnite → No params (opens default)</p>
+        <div class="url-text">hatchignitedl://rmssg.hatchearlylearning.com/exploreignite</div>
+        <a class="explore" href="hatchignitedl://rmssg.hatchearlylearning.com/exploreignite">
+            Open ExploreIgnite (Default) ✅
         </a>
     </div>
 
-    <!-- ExploreIgnite Direct Deep Links -->
-   <h2>🎮 ExploreIgnite Direct</h2>
-
-<div class="link-box">
-    <p>rmssg host → directToExplore=true</p>
-    <a class="explore" href="hatchignitedl://rmssg.hatchearlylearning.com/exploreignite?directToExplore=true">
-        Open ExploreIgnite (rmssg) ✅
-    </a>
-</div>
-
-<div class="link-box">
-    <p>rms host → directToExplore=true</p>
-    <a class="explore" href="hatchignitedl://rms.hatchearlylearning.com/exploreignite?directToExplore=true">
-        Open ExploreIgnite (rms) ✅
-    </a>
-</div>
+    <div class="link-box">
+        <p>domain: Science & Technology | subdomain: Physical Science | gameid: 134</p>
+        <div class="url-text">hatchignitedl://rmssg.hatchearlylearning.com/exploreignite?domain=Science%20%26%20Technology&subdomain=Physical%20Science&gameid=134</div>
+        <a class="explore" href="hatchignitedl://rmssg.hatchearlylearning.com/exploreignite?domain=Science%20%26%20Technology&subdomain=Physical%20Science&gameid=134">
+            Open ExploreIgnite (Science & Technology) ✅
+        </a>
+    </div>
 
 </body>
 </html>
